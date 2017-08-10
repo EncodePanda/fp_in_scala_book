@@ -1,1 +1,3 @@
-chapter1.txt
+Front.txt
+Main.txt
+Back.txt
