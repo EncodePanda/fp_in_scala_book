@@ -2,4 +2,30 @@
 
 -# Part 1
 
+# Why Functional Programming?
+
+## Paradigm for monks?
+
+Functional Programming (FP) is becoming a trendy buzz word. It has suddenly became very popular in the industry. For people not familiar with the paradigm, it seems as if it pop out of nowhere as a fresh, innovatory approach to software development. But FP is not a fresh concept. If you will ever get your hands on “Why Functional Programming Matters” paper (which I highly recommend), somewhere on page 3 you will read that “(…) with recent languages such as Modula-II and Ada”. I remember that when I first read that, I paused for few seconds completely confused, with a troubling thought “Ada? Recent language?”. I skimed over to the first page of that paper to learn with horror that it was first published in 1986! I was 2 year old at that time! But Functional Programming did not emerged in the 80s, it is far more older concept – almost as old as the computing industry itself (some argue that even older). Covering the history of Functional Programming could be a topic of a separate book. Suffice to say – it is well established paradigm, which has proven itself to be a robust solution for variety of problems.
+
+But what can we really say about Functional Programming, beside the fact that is becoming popular? What does it mean to write FP code or what qualifies a language to be called a functional programming language? Does the fact that your language now supports a lambda expression or the fact that you are using immutable data structures makes you a Functional Programmer?
+
+> “Of course these days lambdas became very trendy. You have lambdas in C++, you have lambdas in Python and you have lambdas in Java. So here is Duke – the icon for Java – looking very smug. Congratulations Duke, you’ve finally caught up with were Alonzo Church was in 1936” — Philip Wadler [2]
+
+So what does it mean to be Functional Programmer? If you google the question you will learn things like:
+
+* In FP there are **no** assignments and **no** variables
+* Once given a value it will **never** change
+* **no** side-effects
+
+So it is pretty much **no**, **no**, **never** and **no**.
+
+> “The functional programmer sounds rather like a medieval monk, denying himself the pleasures of life in the hope that it will make him virtuous.” — John Hughes
+
+But that seems a bit odd, doesn’t it? There must be something more to it, right? The concept of “purity” can not be just there for the ascetic masochism of those who practice the paradigm.
+
+The answer is: yes – there is much more to that.
+
 # Typeclasses
+
+TBD
