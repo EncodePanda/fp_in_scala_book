@@ -1,12 +1,10 @@
 {mainmatter}
-
 -# Part 1
+# Why I wrote this book?
 
-# Why Functional Programming?
+# Paradigm for monks?
 
-## Paradigm for monks?
-
-Functional Programming (FP) is becoming a trendy buzz word. It has suddenly became very popular in the industry. For people not familiar with the paradigm, it seems as if it pop out of nowhere as a fresh, innovatory approach to software development. But FP is not a fresh concept. If you will ever get your hands on “Why Functional Programming Matters” paper (which I highly recommend), somewhere on page 3 you will read that “(…) with recent languages such as Modula-II and Ada”. I remember that when I first read that, I paused for few seconds completely confused, with a troubling thought “Ada? Recent language?”. I skimed over to the first page of that paper to learn with horror that it was first published in 1986! I was 2 year old at that time! But Functional Programming did not emerged in the 80s, it is far more older concept – almost as old as the computing industry itself (some argue that even older). Covering the history of Functional Programming could be a topic of a separate book. Suffice to say – it is well established paradigm, which has proven itself to be a robust solution for variety of problems.
+Functional Programming (FP) is becoming a trendy buzzword. It has suddenly became very popular in the industry. For people not familiar with the paradigm, it seems as if it pop out of nowhere as a fresh, innovatory approach to software development. But Functional Programming is not a fresh concept. If you will ever get your hands on “Why Functional Programming Matters” paper (which I highly recommend), somewhere on page 3 you will read *“(…) with recent languages such as Modula-II and Ada”*. I remember that when I first read that, I paused for few seconds completely confused, with a troubling thought *“Ada? Recent language?”*. I skimed over to the first page of that paper to learn with horror that it was first published in 1986! I was 2 year old at that time! Why was I not told? Who kept me in darkness through all those years? But Functional Programming did not emerged in the 80s, it is far more older concept – almost as old as the computing industry itself (some argue that even older). Covering the history of Functional Programming could be a topic of a separate book. Suffice to say – it is well established paradigm, which has proven itself to be a robust solution for variety of problems.
 
 But what can we really say about Functional Programming, beside the fact that is becoming popular? What does it mean to write FP code or what qualifies a language to be called a functional programming language? Does the fact that your language now supports a lambda expression or the fact that you are using immutable data structures makes you a Functional Programmer?
 
@@ -26,6 +24,27 @@ But that seems a bit odd, doesn’t it? There must be something more to it, righ
 
 The answer is: yes – there is much more to that.
 
-# Typeclasses
+## Why Functional Programming matters?
 
+As engineers we endeavour to achieve simplicity, because software development is hard and complex. That is why all divide and conquer solutions seem so appealing. We strive for modularity. Ability to reason about something less complex, something that we can comprehend. You might be familiar with terms like microservices, hexegonal architecture, actor model, single responsobility principle, dependency injection, bounded context. All those terms might have very little in common at first glance, but they share common denominator - simplicty by devison, also known as divide and conquer.
+
+To give you an example: why suddenly “microservices” became such a popular concept few years ago? Different people will give you different answers but it all boils down to one fact: promise of simple, self-sustainable modules. A hope, that you can divide your complex problem into little, managable services and deploy final product by glueing them together. What people forget is the fact that when you divide a hard problem into smaller set of problems, the orginal complexity does not magically disappear. It’s still there, waiting patiently, ready to strike when you least expect it. In case of microservices, you move your complexity to your topology & network – which, as we know it, have their own set of problems [3].
+
+I will risk saying that every developer - who have been in the industry long enough - has expirienced this phenomena at least once. You craft and hack your subsolutions without any issues or concerns. You have them well tested and confident that they work. But when you merge your final solution, things break. It might be for verity of reasons: not proper isolation of concerns, shared state, hardware or infrastructure problems. Eventaully you realise that you can not simply get rid of complexity by dividing the problem. You never remove it, you simply just postpone it.
+
+Functional Programming also embraces a divide and conquer approach. Thus immediately question arise “Whow is FP any different? Does it suffer the same falws?”. The difference is huge and fundumental one. Instead of ignoring complexity or pretending its not there, Functional Programming embrace its existance. It is done however in a way  that gives you full control over the process. Sounds as too good to be true, right? Fundementally Functional Programming is build on the concept of true modularity. Modules that you work with are context independent and highly-decoupled. Once created, tested and deployed, the module will behave as expected, regardless of its surrounding. “Does it mean that complexity disappears?” you might ask. The answer is: no, of course not! Obviously complexity is still there. The difference is a fact that FP has more then few decades of research of how to deal with different issues & problems that might occur. It’s still a working field and there is of course a chance that you will run into a problem, that has never been delt with – a problem that will require a unique, innovative approach. But to be fair, chances of it are small.
+
+This might seem all vague now (we have to whole book ahead of us to make things bright and clear), but as Functional Programmer, you will be constructing your progra by building one big function. That function will be compososed of smaller functions and those will be crafted from even smaller functions and so on. You will have full control over the complexity, both its presents and ways to contaminated it. You will become more self-aware of possible problems and in the same time you will have more then 40 years of research behind your back to help you deal with any problems ahead of you. We (developers) often call our selves "software engineeres". For the first time in your life, you will feel that this title actually makes sense. You work will start more resamble enginering, less it will look like an art or a craftsmanship.
+
+## Dicipline vs safety
+
+It is worth noticing that author of this book does not believe that Functional Programming is the only way to achive readable, maintainable, decoubpled and highly coherent code. You can achieve that in (most problably) any programing language or paradigm. The qusetion that remain is how much cognitive brain power (actual human effort) is needed for the project to sustain its original purity while its complexity increses. I will argue that its better to have machine take care of as much of that process as possible. It's good to have working, modular code, but it's better to have compile-time gureentees that protect this state over time. 
+
+We as humans tend to make mistakes. We gamble, take shortcuts, build workarounds. With unaviodable growth of our project, we are doomed to loose control over it, if we sorely rely on our.
+
+# Typeclasses
 TBD
+
+# Functions, functions everywhere!
+
+# What's wrong with my current approach?
